@@ -21,8 +21,7 @@ mobs:register_mob("aemp:1flyingcow", {
 	visual = "mesh",
 	mesh = "flyingcow.b3d",
 	textures = {
-		{"flyingcow.png","wings.png"}, --how can the wings texture be added?
-		--{"flyingcow.png^wings.png"},
+		{"flyingcow.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -36,9 +35,9 @@ mobs:register_mob("aemp:1flyingcow", {
 	},
 })
 
-mobs:register_egg("aemp:1flyingcow", "Flying Cow uses 2 textures needs fixing", "flyingcow_inv.png", 0)
+mobs:register_egg("aemp:1flyingcow", "Flying Cow", "flyingcow_inv.png", 0)
 
-mobs:register_mob("aemp:2flyingcow1", {
+mobs:register_mob("aemp:2moa", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -49,9 +48,96 @@ mobs:register_mob("aemp:2flyingcow1", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "flyingcow1.b3d",
+	mesh = "moa.b3d",
 	textures = {
-		{"flyingcow1.png"}
+		{"moa.png"}
+    },
+	visual_size = {x=2, y=2},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:2moa", "Moa", "moa_inv.png", 0)
+
+mobs:register_mob("aemp:3wisp", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "wisp.b3d",
+	textures = {
+		{"wisp.png"}
+    },
+	visual_size = {x=2, y=2},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:3wisp", "Fleeting wisp", "wisp_inv.png", 0)
+
+mobs:register_mob("aemp:4swet", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "swet.b3d",
+	textures = {
+		{"swet.png"}
+    },
+	visual_size = {x=5, y=5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:4swet", "Pink Swet", "swet_inv.png", 0)
+
+mobs:register_mob("aemp:5aerbunny", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "aerbunny.b3d",
+	textures = {
+		{"aerbunny.png"}
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -65,4 +151,33 @@ mobs:register_mob("aemp:2flyingcow1", {
 	},
 })
 
-mobs:register_egg("aemp:2flyingcow1", "Flying Cow uses 1 texture", "flyingcow_inv.png", 0)
+mobs:register_egg("aemp:5aerbunny", "Aerbunny", "aerbunny_inv.png", 0)
+
+mobs:register_mob("aemp:6sprout", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "sprout.b3d",
+	textures = {
+		{"sprout.png"}
+    },
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:6sprout", "Sprout", "sprout_inv.png", 0)
