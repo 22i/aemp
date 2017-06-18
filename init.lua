@@ -37,6 +37,10 @@ mobs:register_mob("aemp:1flyingcow", {
 
 mobs:register_egg("aemp:1flyingcow", "Flying Cow", "flyingcow_inv.png", 0)
 
+--###################
+--################### MOA
+--###################
+
 mobs:register_mob("aemp:2moa", {
 	type = "animal",
 	passive = true,
@@ -65,6 +69,10 @@ mobs:register_mob("aemp:2moa", {
 })
 
 mobs:register_egg("aemp:2moa", "Moa", "moa_inv.png", 0)
+
+--###################
+--################### WISP
+--###################
 
 mobs:register_mob("aemp:3wisp", {
 	type = "animal",
@@ -95,6 +103,10 @@ mobs:register_mob("aemp:3wisp", {
 
 mobs:register_egg("aemp:3wisp", "Fleeting wisp", "wisp_inv.png", 0)
 
+--###################
+--################### SWET
+--###################
+
 mobs:register_mob("aemp:4swet", {
 	type = "animal",
 	passive = true,
@@ -123,6 +135,10 @@ mobs:register_mob("aemp:4swet", {
 })
 
 mobs:register_egg("aemp:4swet", "Pink Swet", "swet_inv.png", 0)
+
+--###################
+--################### AERBUNNY
+--###################
 
 mobs:register_mob("aemp:5aerbunny", {
 	type = "animal",
@@ -153,6 +169,10 @@ mobs:register_mob("aemp:5aerbunny", {
 
 mobs:register_egg("aemp:5aerbunny", "Aerbunny", "aerbunny_inv.png", 0)
 
+--###################
+--################### SPROUT
+--###################
+
 mobs:register_mob("aemp:6sprout", {
 	type = "animal",
 	passive = true,
@@ -181,6 +201,10 @@ mobs:register_mob("aemp:6sprout", {
 })
 
 mobs:register_egg("aemp:6sprout", "Sprout", "sprout_inv.png", 0)
+
+--###################
+--################### FANGRIN
+--###################
 
 mobs:register_mob("aemp:7fangrin", {
 	type = "animal",
@@ -211,6 +235,10 @@ mobs:register_mob("aemp:7fangrin", {
 
 mobs:register_egg("aemp:7fangrin", "Fangrin", "fangrin_inv.png", 0)
 
+--###################
+--################### PHYG
+--###################
+
 mobs:register_mob("aemp:8phyg", {
 	type = "animal",
 	passive = true,
@@ -240,6 +268,10 @@ mobs:register_mob("aemp:8phyg", {
 
 mobs:register_egg("aemp:8phyg", "Phyg", "phyg_inv.png", 0)
 
+--###################
+--################### SHEEPUFF
+--###################
+
 mobs:register_mob("aemp:9sheepuff", {
 	type = "animal",
 	passive = true,
@@ -268,3 +300,36 @@ mobs:register_mob("aemp:9sheepuff", {
 })
 
 mobs:register_egg("aemp:9sheepuff", "Sheepuff", "sheepuff_inv.png", 0)
+
+--###################
+--################### SUNSPIRIT
+--###################
+
+mobs:register_mob("aemp:10sunspirit", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "sunspirit.b3d",
+	textures = {
+		{"sunspirit.png"}
+    },
+	visual_size = {x=5, y=5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:10sunspirit", "Sunspirit", "sunspirit_inv.png", 0)
