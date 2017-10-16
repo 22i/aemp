@@ -17,21 +17,25 @@ mobs:register_mob("aemp:1flyingcow", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "flyingcow.b3d",
-	textures = {
-		{"flyingcow.png"},
+    textures = {
+                "flying_cow.png", -- fur
+                "wings.png", --sheep texture
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+        walk_speed = 25,
+        run_speed = 40,
+		stand_start = 0,
+        stand_end = 0,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
 	},
 })
 
@@ -248,21 +252,27 @@ mobs:register_mob("aemp:8phyg", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "phyg.b3d",
-	textures = {
-		{"phyg.png"}
+    textures = {
+                "phyg.png", -- fur
+                "saddle.png", --sheep texture
+                "wings.png",
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+        stand_speed = 40,
+        walk_speed = 40,
+		run_speed = 50,
+		stand_start = 0,
+        stand_end = 0,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
 	},
 })
 
@@ -281,21 +291,26 @@ mobs:register_mob("aemp:9sheepuff", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "sheepuff.b3d",
-	textures = {
-		{"sheepuff.png"}
+    textures = {
+                "fur.png", -- fur
+                "sheepuff.png", --sheep texture
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 40,
+        stand_end = 80,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
 	},
 })
 
