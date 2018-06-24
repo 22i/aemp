@@ -52,11 +52,10 @@ mobs:register_mob("aemp:2moa", {
 	hp_min = 12,
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
-	mesh = "moa.b3d",
+	mesh = "moacockatrice.b3d",
 	textures = {
-		{"moa.png"}
+		{"moa_blue.png"}
     },
 	visual_size = {x=2, y=2},
 	walk_velocity = 0.6,
@@ -71,6 +70,37 @@ mobs:register_mob("aemp:2moa", {
 })
 
 mobs:register_egg("aemp:2moa", "Moa", "moa_inv.png", 0)
+
+--###################
+--################### COCKATRICE
+--###################
+
+mobs:register_mob("aemp:2acockatrice", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+	visual = "mesh",
+	mesh = "moacockatrice.b3d",
+	textures = {
+		{"cockatrice.png"}
+    },
+	visual_size = {x=2, y=2},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:2acockatrice", "Cockatrice", "cockatrice_inv.png", 0)
 
 --###################
 --################### WISP
@@ -342,3 +372,35 @@ mobs:register_mob("aemp:10sunspirit", {
 })
 
 mobs:register_egg("aemp:10sunspirit", "Sunspirit", "sunspirit_inv.png", 0)
+
+
+--###################
+--################### AERWHALE
+--###################
+
+mobs:register_mob("aemp:11aerwhale", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+	visual = "mesh",
+	mesh = "aerwhale.b3d",
+	textures = {
+		{"aerwhale.png"}
+    },
+	visual_size = {x=5, y=5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:11aerwhale", "Aerwhale", "aerwhale_inv.png", 0)
