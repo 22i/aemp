@@ -114,7 +114,6 @@ mobs:register_mob("aemp:3wisp", {
 	hp_min = 12,
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "wisp.b3d",
 	textures = {
@@ -146,7 +145,6 @@ mobs:register_mob("aemp:4swet", {
 	hp_min = 12,
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "swet.b3d",
 	textures = {
@@ -214,7 +212,6 @@ mobs:register_mob("aemp:6sprout", {
 	hp_min = 12,
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "sprout.b3d",
 	textures = {
@@ -246,7 +243,6 @@ mobs:register_mob("aemp:7fangrin", {
 	hp_min = 12,
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "fangrin.b3d",
 	textures = {
@@ -353,7 +349,6 @@ mobs:register_mob("aemp:10sunspirit", {
 	hp_min = 12,
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "sunspirit.b3d",
 	textures = {
@@ -404,3 +399,65 @@ mobs:register_mob("aemp:11aerwhale", {
 })
 
 mobs:register_egg("aemp:11aerwhale", "Aerwhale", "aerwhale_inv.png", 0)
+
+--###################
+--################### AECHORPLANT
+--###################
+
+mobs:register_mob("aemp:12aechorplant", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+	visual = "mesh",
+	mesh = "aechorplant.b3d",
+	textures = {
+		{"aechorplant.png"}
+    },
+	visual_size = {x=5, y=5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:12aechorplant", "Aechorplant", "aechorplant_inv.png", 0)
+
+--###################
+--################### ZEPHYR
+--###################
+
+mobs:register_mob("aemp:13zephyr", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+	visual = "mesh",
+	mesh = "zephyr.b3d",
+	textures = {
+		{"zephyr.png"}
+    },
+	visual_size = {x=5, y=5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("aemp:13zephyr", "Zephyr", "zephyr_inv.png", 0)
